@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.MattRajca.VentilatorDaemon</string>
+	<key>CFBundleName</key>
+	<string>VentilatorDaemon</string>
+	<key>SMAuthorizedClients</key>
+	<array>
+		<string>identifier &quot;com.MattRajca.Ventilator&quot; and certificate leaf = H&quot;d15163d723827e46b3afec02a85076df3d408b45&quot;</string>
+	</array>
+</dict>
+</plist>

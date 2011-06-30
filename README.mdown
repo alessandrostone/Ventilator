@@ -1,0 +1,4 @@
+Ventilator
+==========
+
+Ventilator is a utility application for Mac OS X that allows you to control the speed of the fans inside your Mac. Right now, only Intel iMacs are supported and the maximum speed of the hard drive's fan is the only configurable item. Ventilator was originally designed to make it easy to cap the speed of the hard drive's fan after it started spinning at over 4000 RPM once I installed a SSD drive in my iMac.

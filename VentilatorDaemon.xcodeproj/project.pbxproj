@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C917C41213AC174500510076 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C917C41113AC174500510076 /* CoreServices.framework */; };
+		C98F39F913B52E2600FB2C15 /* smc.c in Sources */ = {isa = PBXBuildFile; fileRef = C98F39F713B52E2600FB2C15 /* smc.c */; };
+		C9ECD71813AD3D0500F26273 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C9ECD71513AD3D0500F26273 /* main.c */; };
+		C9ED2A2813AC25CC00DBBE1B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ED2A2713AC25CC00DBBE1B /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C917C40D13AC174500510076 /* com.MattRajca.VentilatorDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.MattRajca.VentilatorDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		C917C41113AC174500510076 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C98F39F713B52E2600FB2C15 /* smc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smc.c; sourceTree = "<group>"; };
+		C98F39F813B52E2600FB2C15 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		C9ECD71213AD3D0500F26273 /* Daemon-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Daemon-Info.plist"; sourceTree = "<group>"; };
+		C9ECD71313AD3D0500F26273 /* Daemon-launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Daemon-launchd.plist"; sourceTree = "<group>"; };
+		C9ECD71513AD3D0500F26273 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C9ED2A2713AC25CC00DBBE1B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C917C40A13AC174500510076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ED2A2813AC25CC00DBBE1B /* IOKit.framework in Frameworks */,
+				C917C41213AC174500510076 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C917C40213AC174500510076 = {
+			isa = PBXGroup;
+			children = (
+				C9ECD71413AD3D0500F26273 /* Source */,
+				C9ECD71113AD3D0500F26273 /* Resources */,
+				C917C41013AC174500510076 /* Frameworks */,
+				C917C40E13AC174500510076 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C917C40E13AC174500510076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C917C40D13AC174500510076 /* com.MattRajca.VentilatorDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C917C41013AC174500510076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C917C41113AC174500510076 /* CoreServices.framework */,
+				C9ED2A2713AC25CC00DBBE1B /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C98F39F613B52E2600FB2C15 /* SMC */ = {
+			isa = PBXGroup;
+			children = (
+				C98F39F713B52E2600FB2C15 /* smc.c */,
+				C98F39F813B52E2600FB2C15 /* smc.h */,
+			);
+			path = SMC;
+			sourceTree = SOURCE_ROOT;
+		};
+		C9ECD71113AD3D0500F26273 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9ECD71213AD3D0500F26273 /* Daemon-Info.plist */,
+				C9ECD71313AD3D0500F26273 /* Daemon-launchd.plist */,
+			);
+			name = Resources;
+			path = Daemon/Resources;
+			sourceTree = "<group>";
+		};
+		C9ECD71413AD3D0500F26273 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C98F39F613B52E2600FB2C15 /* SMC */,
+				C9ECD71513AD3D0500F26273 /* main.c */,
+			);
+			name = Source;
+			path = Daemon/Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C917C40C13AC174500510076 /* VentilatorDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C917C41A13AC174500510076 /* Build configuration list for PBXNativeTarget "VentilatorDaemon" */;
+			buildPhases = (
+				C917C40913AC174500510076 /* Sources */,
+				C917C40A13AC174500510076 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VentilatorDaemon;
+			productName = VentilatorDaemon;
+			productReference = C917C40D13AC174500510076 /* com.MattRajca.VentilatorDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C917C40413AC174500510076 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Matt Rajca";
+			};
+			buildConfigurationList = C917C40713AC174500510076 /* Build configuration list for PBXProject "VentilatorDaemon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C917C40213AC174500510076;
+			productRefGroup = C917C40E13AC174500510076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C917C40C13AC174500510076 /* VentilatorDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C917C40913AC174500510076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ECD71813AD3D0500F26273 /* main.c in Sources */,
+				C98F39F913B52E2600FB2C15 /* smc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C917C41813AC174500510076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C917C41913AC174500510076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		C917C41B13AC174500510076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Matt Rajca";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(SRCROOT)/Daemon/Resources/Daemon-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/Daemon/Resources/Daemon-launchd.plist",
+				);
+				PRODUCT_NAME = com.MattRajca.VentilatorDaemon;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C917C41C13AC174500510076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Matt Rajca";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(SRCROOT)/Daemon/Resources/Daemon-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/Daemon/Resources/Daemon-launchd.plist",
+				);
+				PRODUCT_NAME = com.MattRajca.VentilatorDaemon;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C917C40713AC174500510076 /* Build configuration list for PBXProject "VentilatorDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C917C41813AC174500510076 /* Debug */,
+				C917C41913AC174500510076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C917C41A13AC174500510076 /* Build configuration list for PBXNativeTarget "VentilatorDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C917C41B13AC174500510076 /* Debug */,
+				C917C41C13AC174500510076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C917C40413AC174500510076 /* Project object */;
+}

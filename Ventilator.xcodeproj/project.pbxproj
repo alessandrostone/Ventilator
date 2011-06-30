@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C917C42613AC1E6300510076 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C917C42513AC1E6300510076 /* Security.framework */; };
+		C983D78313B7E37400465409 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C983D78213B7E37400465409 /* SecurityInterface.framework */; };
+		C98F39FE13B52E2E00FB2C15 /* smc.c in Sources */ = {isa = PBXBuildFile; fileRef = C98F39FC13B52E2E00FB2C15 /* smc.c */; };
+		C98F3A0013B52E8E00FB2C15 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98F39FF13B52E8E00FB2C15 /* IOKit.framework */; };
+		C9C86C0013AC050100B63C26 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C86BFF13AC050100B63C26 /* Cocoa.framework */; };
+		C9C86C1D13AC080A00B63C26 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C86C1C13AC080A00B63C26 /* ServiceManagement.framework */; };
+		C9ECD73513AD3D6900F26273 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9ECD72E13AD3D6900F26273 /* InfoPlist.strings */; };
+		C9ECD73613AD3D6900F26273 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ECD72F13AD3D6900F26273 /* MainMenu.xib */; };
+		C9ECD73D13AD3D7A00F26273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ECD73913AD3D7A00F26273 /* main.m */; };
+		C9ECD73E13AD3D7A00F26273 /* VentilatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ECD73C13AD3D7A00F26273 /* VentilatorAppDelegate.m */; };
+		C9ECD74213AD3E0400F26273 /* com.MattRajca.VentilatorDaemon in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9ECD74113AD3E0400F26273 /* com.MattRajca.VentilatorDaemon */; };
+		C9ECD74413AD3E4300F26273 /* Fan.icns in Resources */ = {isa = PBXBuildFile; fileRef = C9ECD74313AD3E4300F26273 /* Fan.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9ECD70E13AD3CE800F26273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9ECD70613AD3CE800F26273 /* VentilatorDaemon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C917C40D13AC174500510076;
+			remoteInfo = VentilatorDaemon;
+		};
+		C9ECD73F13AD3DAE00F26273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9ECD70613AD3CE800F26273 /* VentilatorDaemon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C917C40C13AC174500510076;
+			remoteInfo = VentilatorDaemon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C917C43313AC1EBB00510076 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				C9ECD74213AD3E0400F26273 /* com.MattRajca.VentilatorDaemon in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C917C42513AC1E6300510076 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C983D78213B7E37400465409 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		C98F39FC13B52E2E00FB2C15 /* smc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smc.c; sourceTree = "<group>"; };
+		C98F39FD13B52E2E00FB2C15 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		C98F39FF13B52E8E00FB2C15 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C9C86BFB13AC050100B63C26 /* Ventilator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ventilator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C86BFF13AC050100B63C26 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9C86C0213AC050100B63C26 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9C86C0313AC050100B63C26 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9C86C0413AC050100B63C26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9C86C1C13AC080A00B63C26 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		C9ECD70613AD3CE800F26273 /* VentilatorDaemon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = VentilatorDaemon.xcodeproj; sourceTree = "<group>"; };
+		C9ECD73013AD3D6900F26273 /* Ventilator-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ventilator-Info.plist"; sourceTree = "<group>"; };
+		C9ECD73213AD3D6900F26273 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9ECD73313AD3D6900F26273 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9ECD73913AD3D7A00F26273 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9ECD73A13AD3D7A00F26273 /* Ventilator-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ventilator-Prefix.pch"; sourceTree = "<group>"; };
+		C9ECD73B13AD3D7A00F26273 /* VentilatorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentilatorAppDelegate.h; sourceTree = "<group>"; };
+		C9ECD73C13AD3D7A00F26273 /* VentilatorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentilatorAppDelegate.m; sourceTree = "<group>"; };
+		C9ECD74113AD3E0400F26273 /* com.MattRajca.VentilatorDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = com.MattRajca.VentilatorDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ECD74313AD3E4300F26273 /* Fan.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Fan.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C86BF813AC050100B63C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C86C0013AC050100B63C26 /* Cocoa.framework in Frameworks */,
+				C98F3A0013B52E8E00FB2C15 /* IOKit.framework in Frameworks */,
+				C917C42613AC1E6300510076 /* Security.framework in Frameworks */,
+				C983D78313B7E37400465409 /* SecurityInterface.framework in Frameworks */,
+				C9C86C1D13AC080A00B63C26 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C98F39FB13B52E2E00FB2C15 /* SMC */ = {
+			isa = PBXGroup;
+			children = (
+				C98F39FC13B52E2E00FB2C15 /* smc.c */,
+				C98F39FD13B52E2E00FB2C15 /* smc.h */,
+			);
+			path = SMC;
+			sourceTree = SOURCE_ROOT;
+		};
+		C9C86BF013AC050100B63C26 = {
+			isa = PBXGroup;
+			children = (
+				C9ECD74113AD3E0400F26273 /* com.MattRajca.VentilatorDaemon */,
+				C9ECD70613AD3CE800F26273 /* VentilatorDaemon.xcodeproj */,
+				C9ECD73813AD3D7A00F26273 /* Source */,
+				C9ECD72C13AD3D6900F26273 /* Resources */,
+				C9C86BFE13AC050100B63C26 /* Frameworks */,
+				C9C86BFC13AC050100B63C26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C86BFC13AC050100B63C26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C86BFB13AC050100B63C26 /* Ventilator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C86BFE13AC050100B63C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C86BFF13AC050100B63C26 /* Cocoa.framework */,
+				C98F39FF13B52E8E00FB2C15 /* IOKit.framework */,
+				C917C42513AC1E6300510076 /* Security.framework */,
+				C983D78213B7E37400465409 /* SecurityInterface.framework */,
+				C9C86C1C13AC080A00B63C26 /* ServiceManagement.framework */,
+				C9C86C0113AC050100B63C26 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9C86C0113AC050100B63C26 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C86C0213AC050100B63C26 /* AppKit.framework */,
+				C9C86C0313AC050100B63C26 /* CoreData.framework */,
+				C9C86C0413AC050100B63C26 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9ECD70713AD3CE800F26273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9ECD70F13AD3CE800F26273 /* com.MattRajca.VentilatorDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9ECD72C13AD3D6900F26273 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9ECD74313AD3E4300F26273 /* Fan.icns */,
+				C9ECD72E13AD3D6900F26273 /* InfoPlist.strings */,
+				C9ECD72F13AD3D6900F26273 /* MainMenu.xib */,
+				C9ECD73013AD3D6900F26273 /* Ventilator-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9ECD73813AD3D7A00F26273 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C98F39FB13B52E2E00FB2C15 /* SMC */,
+				C9ECD73913AD3D7A00F26273 /* main.m */,
+				C9ECD73A13AD3D7A00F26273 /* Ventilator-Prefix.pch */,
+				C9ECD73B13AD3D7A00F26273 /* VentilatorAppDelegate.h */,
+				C9ECD73C13AD3D7A00F26273 /* VentilatorAppDelegate.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C86BFA13AC050100B63C26 /* Ventilator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C86C1913AC050200B63C26 /* Build configuration list for PBXNativeTarget "Ventilator" */;
+			buildPhases = (
+				C9C86BF713AC050100B63C26 /* Sources */,
+				C9C86BF813AC050100B63C26 /* Frameworks */,
+				C9C86BF913AC050100B63C26 /* Resources */,
+				C917C43313AC1EBB00510076 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9ECD74013AD3DAE00F26273 /* PBXTargetDependency */,
+			);
+			name = Ventilator;
+			productName = Ventilator;
+			productReference = C9C86BFB13AC050100B63C26 /* Ventilator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C86BF213AC050100B63C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Matt Rajca";
+			};
+			buildConfigurationList = C9C86BF513AC050100B63C26 /* Build configuration list for PBXProject "Ventilator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9C86BF013AC050100B63C26;
+			productRefGroup = C9C86BFC13AC050100B63C26 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C9ECD70713AD3CE800F26273 /* Products */;
+					ProjectRef = C9ECD70613AD3CE800F26273 /* VentilatorDaemon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C9C86BFA13AC050100B63C26 /* Ventilator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9ECD70F13AD3CE800F26273 /* com.MattRajca.VentilatorDaemon */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = com.MattRajca.VentilatorDaemon;
+			remoteRef = C9ECD70E13AD3CE800F26273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C86BF913AC050100B63C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ECD73513AD3D6900F26273 /* InfoPlist.strings in Resources */,
+				C9ECD73613AD3D6900F26273 /* MainMenu.xib in Resources */,
+				C9ECD74413AD3E4300F26273 /* Fan.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C86BF713AC050100B63C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ECD73D13AD3D7A00F26273 /* main.m in Sources */,
+				C9ECD73E13AD3D7A00F26273 /* VentilatorAppDelegate.m in Sources */,
+				C98F39FE13B52E2E00FB2C15 /* smc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9ECD74013AD3DAE00F26273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VentilatorDaemon;
+			targetProxy = C9ECD73F13AD3DAE00F26273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9ECD72E13AD3D6900F26273 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ECD73213AD3D6900F26273 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9ECD72F13AD3D6900F26273 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ECD73313AD3D6900F26273 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C86C1713AC050200B63C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9C86C1813AC050200B63C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9C86C1A13AC050200B63C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CODE_SIGN_IDENTITY = "Matt Rajca";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/Ventilator-Prefix.pch";
+				INFOPLIST_FILE = "Resources/Ventilator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9C86C1B13AC050200B63C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CODE_SIGN_IDENTITY = "Matt Rajca";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/Ventilator-Prefix.pch";
+				INFOPLIST_FILE = "Resources/Ventilator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C86BF513AC050100B63C26 /* Build configuration list for PBXProject "Ventilator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C86C1713AC050200B63C26 /* Debug */,
+				C9C86C1813AC050200B63C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C86C1913AC050200B63C26 /* Build configuration list for PBXNativeTarget "Ventilator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C86C1A13AC050200B63C26 /* Debug */,
+				C9C86C1B13AC050200B63C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C86BF213AC050100B63C26 /* Project object */;
+}
